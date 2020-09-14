@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/index.css">
+    <title>MAKERLAB</title>
+</head>
+<body>
+  <!-- Barra de navegación --> 
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light" id="navbar">
+    <a class="navbar-brand" href="../index.html">MAKERLAB</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <!-- Creamos los elemntos del menu -->
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Impresión 3D <span class="sr-only"></span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="productos.html">Productos <span class="sr-only"></span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Servicio Técnico <span class="sr-only"></span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Contacto <span class="sr-only"></span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Quienes somos <span class="sr-only"></span></a>
+        </li>
+            
+        <!-- Creamos el buscador -->
+        <form class="form-inline">
+          <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
+          <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">  <img src="img/busca.svg" width="20rem"> </button> -->
+        </form>
+        <!-- <li class="nav-item active">
+          <a class="nav-link" href="#">
+            <img src="../../img/carrito-compra.png" class="carrito" alt="Carrito"><p id="cantidad"></p>
+          </a>
+        </li> -->
+      </ul>
+    </div>
+  </nav> 
+
+  <!-- Creamos un contenedor para los productos -->
+  <div class="container-fluid">
+    <!-- PRIMERA FILA -->
+    <div class="row">
+      <div class="col-lg-3">
+
+        <h1 class="my-4">MakerLab</h1>
+        <div class="list-group">
+          <a href="productos.html" class="list-group-item">Impresoras</a>
+          <a href="#" class="list-group-item">Filamento</a>
+          <a href="repuestos.html" class="list-group-item">Repuestos</a>
+        </div>
+
+      </div>
+
+      <div class="col-lg-9">
+        
+        <!-- Albun de fotos -->
+        <div id="carouselExampleIndicators" class="carousel slide my-4 " data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+          </ol>
+          <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+              <!-- Con mx-auto centramos la imagen -->
+              <img class="d-block img-fluid mx-auto" src="../../img/Filamentos/pla.jpg" width="350px" alt="First slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block img-fluid mx-auto" src="../../img/Filamentos/abs.jpg" width="350px" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block img-fluid mx-auto" src="../../img/Filamentos/nylon6.jpg" width="350px" alt="Third slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block img-fluid mx-auto" src="../../img/Filamentos/pva.jpg" width="350px" alt="Third slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block img-fluid mx-auto" src="../../img/paga_online.jpg" width="350px" alt="Third slide">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+
+        <!-- Creamos una nueva fila dentro de columna de 9 espacios -->
+        <div class="row">
+          <!-- Primer Producto(ABS) -->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="d-flex justify-content-center">
+
+              <div class="card justify-content-center" style="width: 18rem;">
+                <!-- Imagen de la tarjeta -->
+                <a href="#"><img src="../../img/Filamentos/abs.jpg" class="card-img-top" alt="..."></a>
+                <!-- Contenido principal de la tarjeta -->
+                <div class="card-body">
+                  <!-- Titulo del producto con link -->
+                  <a href="#"><h3 class="card-title">FILAMENTO ABS</h3></a>
+                  <!-- Precio del articulo -->
+                  <h4>$1.190,00</h4>
+                  <!-- Descripcion del producto -->
+                  <p class="card-text">Ideal para impresión 3D, ya que te permite crear piezas fuertes y duraderas. Es ligero, de alta resistencia al impacto y considerable resistencia química, al calor y a la humedad, duro y buen aislante eléctrico. Lijable, pintable...</p>
+                  <!-- Boton de carro y boton para ver más del producto -->
+                  <button class="card-link btn-primary" id="abs">Agregar al carrito</button>
+                  <a href="#" class="card-link btn-primary agrandar">Ver más</a>
+                </div>
+                <div class="card-footer">
+                  <!-- Pie de pagina del producto con las estreñas del mismo -->
+                  <p class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</p>
+                </div>
+              </div>
+            </div>
+                  
+          </div>
+
+          <!-- Segunda Producto(hips) -->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="d-flex justify-content-center">
+              <div class="card justify-content-center" style="width: 18rem;">
+                <!-- Imagen de la tarjeta -->
+                <a href="#"><img src="../../img/Filamentos/hips.jpg" class="card-img-top" alt="..."></a>
+                <!-- Contenido principal de la tarjeta -->
+                <div class="card-body">
+                  <!-- Titulo del producto con link -->
+                  <a href="#"><h3 class="card-title">Filamento hips</h3></a>
+                  <!-- Precio del articulo -->
+                  <h4>$1.120,00</h4>
+                  <!-- Descripcion del producto -->
+                  <p class="card-text">HIPS tiene unas propiedades muy similares al ABS, aunque con menor deformación/ contracción y más dureza.No te pierdas de experimentar la opaca y áspera textura del HIPS en tus impresiones 3D de material de alto impacto...</p>
+                  <!-- Boton de carro y boton para ver más del producto -->
+                  <button class="card-link btn-primary" id="hips">Agregar al carrito</button>
+                  <a href="#" class="card-link btn-primary agrandar">Ver más</a>
+                </div>
+                <div class="card-footer">
+                  <!-- Pie de pagina del producto con las estreñas del mismo -->
+                  <p class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9733;</p>
+                </div>
+              </div>
+            </div> 
+          </div>
+
+          <!-- Tercer Producto(PET-G) -->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="d-flex justify-content-center">
+              <div class="card justify-content-center" style="width: 18rem;">
+                <!-- Imagen de la tarjeta -->
+                <a href="#"><img src="../../img/Filamentos/pet_g.jpg" class="card-img-top" alt="..."></a>
+                <!-- Contenido principal de la tarjeta -->
+                <div class="card-body">
+                  <!-- Titulo del producto con link -->
+                  <a href="#"><h3 class="card-title">Filamento pet-G</h3></a>
+                  <!-- Precio del articulo -->
+                  <h4>$1.270,00</h4>
+                  <!-- Descripcion del producto -->
+                  <p class="card-text">El PETg es uno de los plásticos con mayor crecimiento en impresión 3D por su facilidad de uso y resistencia. Se diferencia del resto por ser traslúcido. lo cual abre infinitas posibilidades creativas...</p>
+                  <!-- Boton de carro y boton para ver más del producto -->
+                  <button class="card-link btn-primary" id="pet_g">Agregar al carrito</button>
+                  <a href="#" class="card-link btn-primary agrandar">Ver más</a>
+                </div>
+                <div class="card-footer">
+                  <!-- Pie de pagina del producto con las estreñas del mismo -->
+                  <p class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9733;</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cuarto Producto(NYLON-6) -->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="d-flex justify-content-center">
+              <div class="card justify-content-center" style="width: 18rem;">
+                <!-- Imagen de la tarjeta -->
+                <a href="#"><img src="../../img/Filamentos/nylon6.jpg" class="card-img-top" alt="..."></a>
+                <!-- Contenido principal de la tarjeta -->
+                <div class="card-body">
+                  <!-- Titulo del producto con link -->
+                  <a href="#"><h3 class="card-title">Filamento nylon-6</h3></a>
+                  <!-- Precio del articulo -->
+                  <h4>$1.490,00</h4>
+                  <!-- Descripcion del producto -->
+                  <p class="card-text">s apto para usos generales de impresión, pero se destaca para piezas funcionales en donde se someterán a ciertos grados de tensión y stress mecánico, ya que sus especificaciones lo convierten en un material capaz de resistir considerables cargas...</p>
+                  <!-- Boton de carro y boton para ver más del producto -->
+                  <button class="card-link btn-primary" id="nylon6">Agregar al carrito</button>
+                  <a href="#" class="card-link btn-primary agrandar">Ver más</a>
+                </div>
+                <div class="card-footer">
+                  <!-- Pie de pagina del producto con las estreñas del mismo -->
+                  <p class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9733;</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quinto Producto(NYLON-12) -->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="d-flex justify-content-center">
+              <div class="card justify-content-center" style="width: 18rem;">
+                <!-- Imagen de la tarjeta -->
+                <a href="#"><img src="../../img/Filamentos/nylon12.jpg" class="card-img-top" alt="..."></a>
+                <!-- Contenido principal de la tarjeta -->
+                <div class="card-body">
+                  <!-- Titulo del producto con link -->
+                  <a href="#"><h3 class="card-title">Filamento nylon-12</h3></a>
+                  <!-- Precio del articulo -->
+                  <h4>$3.650,00</h4>
+                  <!-- Descripcion del producto -->
+                  <p class="card-text">Producto de nuestra alianza con EMS Grilon, lanzamos Grilon3 Nylon 12. Un filamento de poliamida técnica con prestaciones de ingeniería del más alto nivel...</p>
+                  <br><br>
+                  <!-- Boton de carro y boton para ver más del producto -->
+                  <button class="card-link btn-primary" id="nylon12">Agregar al carrito</button>
+                  <a href="#" class="card-link btn-primary agrandar">Ver más</a>
+                </div>
+                <div class="card-footer">
+                  <!-- Pie de pagina del producto con las estreñas del mismo -->
+                  <p class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9733;</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quinto Producto(PLA) -->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="d-flex justify-content-center">
+              <div class="card justify-content-center" style="width: 18rem;">
+                <!-- Imagen de la tarjeta -->
+                <a href="#"><img src="../../img/Filamentos/pla.jpg" class="card-img-top" alt="..."></a>
+                <!-- Contenido principal de la tarjeta -->
+                <div class="card-body">
+                  <!-- Titulo del producto con link -->
+                  <a href="#"><h3 class="card-title">Filamento pla</h3></a>
+                  <!-- Precio del articulo -->
+                  <h4>$1.340,00</h4>
+                  <!-- Descripcion del producto -->
+                  <p class="card-text">Desarrolllo exclusivo, permite un amplio rango de temperaturas y una base de color satinada, ideal para lápices 3D. Sus características lo hacen especialmente indicado para piezas artísticas con terminación mejorada. Plástico biodegradable...</p>
+                  <!-- Boton de carro y boton para ver más del producto -->
+                  <button class="card-link btn-primary"  id="pla">Agregar al carrito</button>
+                  <a href="#" class="card-link btn-primary agrandar">Ver más</a>
+                </div>
+                <div class="card-footer">
+                  <!-- Pie de pagina del producto con las estreñas del mismo -->
+                  <p class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9733;</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quinto Producto(PLA-boutique) -->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="d-flex justify-content-center">
+              <div class="card justify-content-center" style="width: 18rem;">
+                <!-- Imagen de la tarjeta -->
+                <a href="#"><img src="../../img/Filamentos/pla_boutique.jpg" class="card-img-top" alt="..."></a>
+                <!-- Contenido principal de la tarjeta -->
+                <div class="card-body">
+                  <!-- Titulo del producto con link -->
+                  <a href="#"><h3 class="card-title">Filamento pla-boutique</h3></a>
+                  <!-- Precio del articulo -->
+                  <h4>$1.340,00</h4>
+                  <!-- Descripcion del producto -->
+                  <p class="card-text">Desarrolllo exclusivo, permite un amplio rango de temperaturas y una base de color satinada, ideal para lápices 3D. Sus características lo hacen especialmente indicado para piezas artísticas con terminación mejorada. Plástico biodegradable...</p>
+                  <!-- Boton de carro y boton para ver más del producto -->
+                  <button class="card-link btn-primary" id="pla_boutique">Agregar al carrito</button>
+                  <a href="#" class="card-link btn-primary agrandar">Ver más</a>
+                </div>
+                <div class="card-footer">
+                  <!-- Pie de pagina del producto con las estreñas del mismo -->
+                  <p class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9733;</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quinto Producto(PLA-nt) -->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="d-flex justify-content-center">
+              <div class="card justify-content-center" style="width: 18rem;">
+                <!-- Imagen de la tarjeta -->
+                <a href="#"><img src="../../img/Filamentos/pla_nt.jpg" class="card-img-top" alt="..."></a>
+                <!-- Contenido principal de la tarjeta -->
+                <div class="card-body">
+                  <!-- Titulo del producto con link -->
+                  <a href="#"><h3 class="card-title">Filamento pla-nt</h3></a>
+                  <!-- Precio del articulo -->
+                  <h4>$1.940,00</h4>
+                  <!-- Descripcion del producto -->
+                  <p class="card-text">Filamento para impresión 3D de PLA NT, versión mejorada del PLA standard, que ofrece resistencia mecánica extra ni bien impresa la pieza. Es apto para el proceso de templado o recocido....</p>
+                  <br><br><br>
+                  <!-- Boton de carro y boton para ver más del producto -->
+                  <button class="card-link btn-primary" id="pla_nt">Agregar al carrito</button>
+                  <a href="#" class="card-link btn-primary agrandar">Ver más</a>
+                </div>
+                <div class="card-footer">
+                  <!-- Pie de pagina del producto con las estreñas del mismo -->
+                  <p class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9733;</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quinto Producto(PLA+) -->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="d-flex justify-content-center">
+              <div class="card justify-content-center" style="width: 18rem;">
+                <!-- Imagen de la tarjeta -->
+                <a href="#"><img src="../../img/Filamentos/pla_plus.jpg" class="card-img-top" alt="..."></a>
+                <!-- Contenido principal de la tarjeta -->
+                <div class="card-body">
+                  <!-- Titulo del producto con link -->
+                  <a href="#"><h3 class="card-title">Filamento pla+</h3></a>
+                  <!-- Precio del articulo -->
+                  <h4>$1.340,00</h4>
+                  <!-- Descripcion del producto -->
+                  <p class="card-text">PLA + es la evolución mejorada del popular filamento de PLA. Es apto para el post-proceso de templado, simple y económico de usar. Plástico biodegradable....</p>
+                  <br><br><br><br><br>
+                  <!-- Boton de carro y boton para ver más del producto -->
+                  <button class="card-link btn-primary" id="pla_plus">Agregar al carrito</button>
+                  <a href="#" class="card-link btn-primary agrandar">Ver más</a>
+                </div>
+                <div class="card-footer">
+                  <!-- Pie de pagina del producto con las estreñas del mismo -->
+                  <p class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9733;</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quinto Producto(PVA) -->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="d-flex justify-content-center">
+              <div class="card justify-content-center" style="width: 18rem;">
+                <!-- Imagen de la tarjeta -->
+                <a href="#"><img src="../../img/Filamentos/pva.jpg" class="card-img-top" alt="..."></a>
+                <!-- Contenido principal de la tarjeta -->
+                <div class="card-body">
+                  <!-- Titulo del producto con link -->
+                  <a href="#"><h3 class="card-title">Filamento pva</h3></a>
+                  <!-- Precio del articulo -->
+                  <h4>$3.200,00</h4>
+                  <!-- Descripcion del producto -->
+                  <p class="card-text">Filamento PVA para impresión 3D. Plástico soluble en agua
+                    Plásticos de primera calidad. Presentación de 500Gr sellados al vacío en paquete bi-laminado para protección de humedad y radiación UV. Con caja y eje porta carrete....</p>
+                  <!-- Boton de carro y boton para ver más del producto -->
+                  <button class="card-link btn-primary" id="pva">Agregar al carrito</button>
+                  <a href="#" class="card-link btn-primary agrandar">Ver más</a>
+                </div>
+                <div class="card-footer">
+                  <!-- Pie de pagina del producto con las estreñas del mismo -->
+                  <p class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9733;</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quinto Producto(SIMPLIFLEX) -->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="d-flex justify-content-center">
+              <div class="card justify-content-center" style="width: 18rem;">
+                <!-- Imagen de la tarjeta -->
+                <a href="#"><img src="../../img/Filamentos/simpliflex.jpg" class="card-img-top" alt="..."></a>
+                <!-- Contenido principal de la tarjeta -->
+                <div class="card-body">
+                  <!-- Titulo del producto con link -->
+                  <a href="#"><h3 class="card-title">Filamento simpliflex</h3></a>
+                  <!-- Precio del articulo -->
+                  <h4>$1.940,00</h4>
+                  <!-- Descripcion del producto -->
+                  <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non distinctio, recusandae ab quasi inventore pariatur voluptate hic nesciunt impedit delectus quo quae eligendi voluptates, tempora dolor assumenda qui.</p>
+                  <!-- Boton de carro y boton para ver más del producto -->
+                  <button class="card-link btn-primary" id="simpliflex">Agregar al carrito</button>
+                  <a href="#" class="card-link btn-primary agrandar">Ver más</a>
+                </div>
+                <div class="card-footer">
+                  <!-- Pie de pagina del producto con las estreñas del mismo -->
+                  <p class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9733;</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  <script src="../../moduleJS/filamentos.js"></script>
+</body>
+</html>
